@@ -20,4 +20,3 @@ for x in range(10):
         print (f"Wrong! The correct Answer is {rightAns}.")
 quesNum = quesNum+1
 print(f"You got {score}/10.")
-        
