@@ -7,7 +7,6 @@ import random
 score = 0
 quesNum = 1
 
-
 for x in range(10):
     a = random.randint(0,99)
     b = random.randint(0,99)
@@ -20,4 +19,5 @@ for x in range(10):
     else:
         print (f"Wrong! The correct Answer is {rightAns}.")
 quesNum = quesNum+1
+print(f"You got {score}/10.")
         
