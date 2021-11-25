@@ -77,6 +77,28 @@ def evaluate():
             middle2 = d
             middle = b
             smallest = a
+    if d>=a and d>=b and d>=c:
+        largest = d
+        if a>b and a>c and b>c:
+            middle2 = a
+            middle = b
+            smallest = c 
+        elif a<b and a>c and b>c:
+            middle2 = b
+            middle = a
+            smallest = c 
+        elif a>b and a>c and b<c:
+            middle2 = a
+            middle = c
+            smallest = b
+        elif a>b and a<c and b<c:
+            middle2 = c
+            middle = a
+            smallest = b
+        else:
+            middle2 = c
+            middle = b
+            smallest = a
     return largest, middle2, middle, smallest
 
 def display(number):
