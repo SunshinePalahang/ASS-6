@@ -7,7 +7,6 @@ def enterNumber():
     c = int(input("Enter Third Number: "))
     d = int(input("Enter Fourth Number: "))
     return a, b, c, d
-
 def evaluate():
     global largest,middle2,middle,smallest
     largest,middle2,middle,smallest =  0,0,0,0
@@ -77,21 +76,21 @@ def evaluate():
             middle2 = d
             middle = b
             smallest = a
-    if d>=a and d>=b and d>=c:
+    if d>=a and d>=b and d>=c :
         largest = d
-        if a>b and a>c and b>c:
+        if a>b and a>c and b>c :
             middle2 = a
             middle = b
             smallest = c 
-        elif a<b and a>c and b>c:
+        elif a<b and a>c and b>c :
             middle2 = b
             middle = a
             smallest = c 
-        elif a>b and a>c and b<c:
+        elif a>b and a>c and b<c :
             middle2 = a
             middle = c
             smallest = b
-        elif a>b and a<c and b<c:
+        elif a>b and a<c and b<c :
             middle2 = c
             middle = a
             smallest = b
@@ -100,7 +99,6 @@ def evaluate():
             middle = b
             smallest = a
     return largest, middle2, middle, smallest
-
 def display(number):
     print("The numbers from highest to lowest are:" ,largest,middle2,middle,smallest)
 
