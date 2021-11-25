@@ -29,7 +29,7 @@ def evaluate():
             middle2 = d
             middle = b
             smallest = c
-        else:
+        else :
             middle2 = d
             middle = c
             smallest = b
@@ -51,11 +51,32 @@ def evaluate():
             middle2 = a
             middle = d
             smallest = c
-        else:
+        else :
             middle2 = d
             middle = b
             smallest = a
-    
+    if c>=a and c>=b and c>=d :
+        largest = c
+        if a>b and a>d and b>d :
+            middle2= a
+            middle = b
+            smallest = d
+        elif a<b and a>d and b>d :
+            middle2 =  b
+            middle = a
+            smallest = d
+        elif a>b and a>d and b<d :
+            middle2 = a
+            middle = d
+            smallest = b
+        elif a>b and a<d and b<d :
+            middle2 = d
+            middle = a
+            smallest = b
+        else :
+            middle2 = d
+            middle = b
+            smallest = a
     return largest, middle2, middle, smallest
 
 def display(number):
