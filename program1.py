@@ -34,7 +34,13 @@ def evaluate():
             middle = c
             smallest = b
     return largest, middle2, middle, smallest
+
+def display():
+    print("The numbers from highest to lowest are:" ,largest,middle2,middle,smallest)
+
 #step1
 number = enterNumber()
 #step2
 ifelse = evaluate()
+#step3
+display(number)
