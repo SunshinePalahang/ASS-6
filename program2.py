@@ -7,12 +7,17 @@ import random
 score = 0
 quesNum = 1
 
-def addQuiz():
-    for x in range(10):
-        a = random.randint(0,99)
-        b = random.randint(0,99)
-        print("Question",quesNum,":\nWhat is ",a,"+",b,"?" )
-        ans = int(input("="))
-        rightAns = a + b
-       
-questions = addQuiz()
+
+for x in range(10):
+    a = random.randint(0,99)
+    b = random.randint(0,99)
+    print("Question",quesNum,":\nWhat is ",a,"+",b,"?" )
+    ans = int(input("="))
+    rightAns = a + b
+    if ans == rightAns:
+        print("Correct!")
+        score = score + 1
+    else:
+        print (f"Wrong! The correct Answer is {rightAns}.")
+quesNum = quesNum+1
+        
